@@ -17,7 +17,7 @@ jobs:
 
     - name: build
       run: |
-        docker build --file Containerfile .
+        docker build -t fwilhe/dev --file Containerfile .
 
     - name: push
       run: |
