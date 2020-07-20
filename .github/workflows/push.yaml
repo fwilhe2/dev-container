@@ -15,7 +15,7 @@ jobs:
     - name: Log into registry
       run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u fwilhe --password-stdin
 
-    - name: push
+    - name: build
       run: |
         docker build --file Containerfile .
 

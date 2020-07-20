@@ -1,3 +1,3 @@
 FROM fedora:rawhide
 
-RUN dnf upgrade
+RUN dnf --assumeyes upgrade
